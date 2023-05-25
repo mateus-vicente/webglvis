@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>100µPET Scanner</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<input type="file" name="file" id="file" />
+		<button onclick="updateRendererInfo()">Show stats</button>
+		<button onclick="setXY()">XY</button>
+		<button onclick="setYZ()">YZ</button>
+		<button onclick="settYZ()">-YZ</button>
+		<button onclick="setZX()">ZX</button>
+		
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/libs/chevrotain.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/libs/stats.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/libs/dat.gui.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/openvdb@0.1.2/index.min.js"></script>
+
+		<!--- <script src="scannerMonitor_blending.js"></script> -->
+		<script src="scannerMonitor_histogram.js"></script> 
+	</body>
+</html>
